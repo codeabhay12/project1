@@ -1,0 +1,75 @@
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    /* Navigation Bar */
+    .topnav {
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .topnav a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background-color 0.3s;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav .hamburger {
+        display: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .topnav .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #04AA6D;
+    }
+
+    /* For Small Screens */
+    @media screen and (max-width: 600px) {
+        .topnav a { display: none; }
+        .topnav .hamburger {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive a {
+            display: block;
+            text-align: left;
+        }
+    }
+
+    /* Map Styles */
+    #map {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 60px;
+    }
+
+    .leaflet-container {
+        font-size: 1rem;
+    }
